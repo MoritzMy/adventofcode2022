@@ -10,7 +10,8 @@ pub fn part_one(input: &str) -> Option<u32> {
             result = entry;
         }
     }
-    Some(result)
+    Some(result);
+    None
 }
 
 pub fn part_two(input: &str) -> Option<u32> {
@@ -23,7 +24,8 @@ pub fn part_two(input: &str) -> Option<u32> {
         result += calories[calories.len() - i];
     }
 
-    Some(result)
+    Some(result);
+    None
 }
 pub fn create_calorie_list(input: &str) -> Vec<u32>{
     let mut elf:usize = 0;
@@ -40,6 +42,7 @@ pub fn create_calorie_list(input: &str) -> Vec<u32>{
         }
     }
     return calories;
+
 }
 #[cfg(test)]
 mod tests {
